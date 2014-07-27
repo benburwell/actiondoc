@@ -1,9 +1,9 @@
-var paperboy = require('paperboy'),
-    http = require('http'),
-    path = require('path');
+var paperboy = require('paperboy');
+var http = require('http');
+var path = require('path');
 
-var webroot = path.join(__dirname, 'public'),
-    port = 8080;
+var webroot = path.join(__dirname, 'public');
+var port = process.env.PORT || 8080;
 
 http.createServer(function(req, res) {
   var ip = req.connection.remoteAddress;
