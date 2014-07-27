@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="actiondoc">
+    <head>
+        <title>actiondoc</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/css/actiondoc.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/images/actionhero_400.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 center">
+                    <img src="/images/actionhero_400.png" style="height:100px;">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 center">
+                    <h1>actiondoc</h1>
+                    <p class="lead">the <a href="http://actionherojs.com">actionhero.js</a> documentation generator</p>
+                </div>
+            </div>
+
+            <div ng-view></div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="center">Created by <a href="http://www.benburwell.com/">Ben Burwell</a>. Source is <a href="https://github.com/benburwell/actiondoc">on Github</a>.
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/jquery.min.js" type="text/javascript"></script>
+        <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/js/angular.min.js" type="text/javascript"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+        <script src="/js/actiondoc.js" type="text/javascript"></script>
+    </body>
+</html>
