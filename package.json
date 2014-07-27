@@ -1,0 +1,8 @@
+{
+    "name": "actiondoc",
+    "description": "Documentation generator for actionhero.js",
+    "homepage": "http://actiondoc.benburwell.com/",
+    "dependencies": {
+        "paperboy": "latest"
+    }
+}

@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h2 class="center">Generated Documentation for <code>{{ url }}</code></h2>
+    </div>
+</div>
+
+<div class="row" ng-repeat="method in documentation">
+    <div class="col-sm-3">
+        <h3 class="right"><code>{{ method.name }}</code></h3>
+        <p class="lead right">{{ method.description }}</p>
+        <p class="right">API Version: {{ method.version }}</p>
+    </div>
+    <div class="col-sm-9">
+        <h3 ng-show="method.inputs.required">Required Inputs</h3>
+        <ul ng-show="method.inputs.required">
+            <li ng-repeat="input in method.inputs.required"><code>{{ input }}</code></li>
+        </ul>
+
+        <h3 ng-show="method.inputs.optional">Optional Inputs</h3>
+        <ul ng-show="method.inputs.optional">
+            <li ng-repeat="input in method.inputs.optional"><code>{{ input }}</code></li>
+        </ul>
+
+        <h3>Output Example</h3>
+        <pre>{{ method.outputExample | json }}</pre>
+    </div>
+</div>
