@@ -3,6 +3,8 @@
 
   app.controller('HomeController', [ '$scope', '$location', function($scope, $location) {
     
+    $scope.url = 'http://demo.actionherojs.com/api/showDocumentation';
+
     $scope.loadAPI = function() {
       var url = encodeURIComponent($scope.url);
       $location.path('/doc/'+url);

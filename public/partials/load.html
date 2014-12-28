@@ -1,10 +1,12 @@
 <div class="row">
     <div class="col-xs-12">
-        <div class="input-group">
-            <input type="text" class="form-control input-lg" ng-model="url" placeholder="http://demo.actiondoc.com/api/showDocumentation">
-            <span class="input-group-btn">
-                <button class="btn btn-primary btn-lg" ng-click="loadAPI()" type="button">Document!</button>
-            </span>
-        </div>
+        <form ng-submit="loadAPI()">
+            <div class="input-group">
+                <input type="text" class="form-control input-lg" ng-model="url">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary btn-lg" type="submit">Document</button>
+                </span>
+            </div>
+        </form>
     </div>
 </div>
