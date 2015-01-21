@@ -16,8 +16,14 @@
             <div class="col-sm-4">
                 <h4>Inputs</h4>
                 <ul class="list-group">
-                    <li class="list-group-item" ng-repeat="input in method.inputs.required"><code>{{ input }}</code> <span class="label label-warning">Required</span></li>
-                    <li class="list-group-item" ng-repeat="input in method.inputs.optional"><code>{{ input }}</code> <span class="label label-info">Optional</span></li>
+                    <li class="list-group-item" ng-repeat="input in method.inputs.required">
+                        <div class="label label-warning" style="float:right">Required</div>
+                        <code>{{ input }}</code> 
+                    </li>
+                    <li class="list-group-item" ng-repeat="input in method.inputs.optional">
+                        <div class="label label-info" style="float:right">Optional</div>
+                        <code>{{ input }}</code>
+                    </li>
                 </ul>
             </div>
             <div class="col-sm-8">
